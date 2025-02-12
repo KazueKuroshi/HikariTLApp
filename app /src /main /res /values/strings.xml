@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">Translate Novel App</string>
-    <string name="input_hint">Masukkan teks untuk diterjemahkan</string>
-    <string name="translate_button">Terjemahkan</string>
-    <string name="translated_text_hint">Teks terjemahan akan muncul di sini</string>
-    <string name="translation_failed">Terjemahan gagal</string>
-    <string name="error_message">Error: %s</string>
-</resources>
