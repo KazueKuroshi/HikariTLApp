@@ -19,4 +19,3 @@ Aplikasi Android sederhana yang menerjemahkan novel yang di-hosting di GitHub Pa
 
 ## Lisensi
 Proyek ini dilisensikan di bawah Lisensi MIT.
-``` ### **Struktur Proyek**
