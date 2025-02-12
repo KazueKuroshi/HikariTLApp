@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penerjemah Multibahasa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Penerjemah Multibahasa</h1>
+        <p class="subtitle">Terjemahkan teks dari China, Korea, Jepang, atau Inggris ke Bahasa Indonesia dengan mudah.</p>
+        <div class="input-group">
+            <select id="sourceLanguage">
+                <option value="zh">China</option>
+                <option value="ko">Korea</option>
+                <option value="ja">Jepang</option>
+                <option value="en">Inggris</option>
+            </select>
+            <textarea id="inputText" placeholder="Masukkan teks di sini..."></textarea>
+        </div>
+        <button onclick="translateText()">Terjemahkan</button>
+        <div class="output-box">
+            <h2>Hasil Terjemahan</h2>
+            <div id="outputText"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(() => console.log('Service Worker berhasil didaftarkan'))
+                .catch((error) => console.error('Gagal mendaftarkan Service Worker:', error));
+        }
+    </script>
+</body>
+</html>
